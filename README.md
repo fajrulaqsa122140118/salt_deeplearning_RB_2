@@ -44,10 +44,26 @@
 
 ### Grafik Sederhana
 
+#### Plain34
+
+![Deskripsi foto](images/grafik_plain.jpg "ABCD")
+
+#### Resnet34
+
+![Deskripsi foto](images/grafik_resnet.jpg "ABCD")
+
+
 ## Analisis singkat 
 Residual connection itu intinya adalah “jalan pintas” (shortcut) di dalam jaringan deep learning, khususnya di arsitektur seperti **ResNet**. Jalan pintas ini memungkinkan input dari suatu layer langsung diteruskan ke layer yang lebih jauh, tanpa harus melewati semua proses transformasi di tengah. Tanpa residual connection, informasi harus melewati banyak lapisan, sehingga sinyal gradien bisa semakin lemah saat proses backpropagation. Akibatnya, model yang sangat dalam sering susah dilatih karena **vanishing gradient**—gradien mengecil sampai hampir hilang.
 
 Dengan adanya residual connection, gradien punya jalur alternatif untuk mengalir balik ke layer awal. Ini membuat model bisa belajar lebih stabil, bahkan ketika jumlah layer sangat banyak. Secara performa, model dengan residual connection biasanya **lebih cepat konvergen** (cepat mencapai akurasi tinggi) dan bisa menghasilkan akurasi lebih baik dibanding model “plain” (tanpa shortcut), karena informasi penting tidak mudah hilang. Jadi perbedaan utamanya: jaringan **plain** cenderung stagnan atau overfit saat makin dalam, sedangkan jaringan dengan residual connection tetap “sehat” meski sangat dalam dan bisa menangkap pola yang lebih kompleks.
+
+
+## Hasil Pada Test Model Plain34
+![Deskripsi foto](images/test_plain.jpg "ABCD")
+
+## Hasil Pada Test Model Resnet34
+![Deskripsi foto](images/test_resnet.jpg "ABCD")
 
 
 ## Konfigurasi Hyperparamter yang digunakan untuk kedua eksperimen
