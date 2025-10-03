@@ -5,6 +5,8 @@
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-ResNet-blue)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
+### 🔧 **Resnet34-Modified With Integrasi Squeeze-and-Excitation (SE) Block,  Penempatan Dropout/Batch Normalization dan  Mengganti Fungsi Aktivasi**
+
 </div>
 
 ---
@@ -94,7 +96,45 @@
 </tr>
 </table>
 
+
 ---
+
+## 🔧 **Resnet34-Modified With Integrasi Squeeze-and-Excitation (SE) Block,  Penempatan Dropout/Batch Normalization dan  Mengganti Fungsi Aktivasi**
+
+<div align="center">
+
+<img src="images/resnet_modified.jpg" alt="ResNet34-Modified Results" width="600"/>
+
+</div>
+
+
+<table>
+<tr>
+<th>📈 Metrik</th>
+<th>🔧 Resnet-34-Modified</th>
+</tr>
+<tr>
+<td><strong>1. Training Accuracy</strong></td>
+<td>0,7028</td>
+</tr>
+<tr>
+<td><strong>2. Validation Accuracy</strong></td>
+<td>0,545</td>
+</tr>
+<tr>
+<td><strong>3. training loss</strong></td>
+<td>0,8806</td>
+</tr>
+<tr>
+<td><strong>4. validation loss</strong></td>
+<td>1.1256</td>
+</tr>
+</table>
+
+---
+
+
+
 
 ## 📊 **Grafik kualitas model**
 
@@ -111,6 +151,14 @@
 <div align="center">
 
 <img src="images/grafik_resnet.jpg" alt="ResNet34 Quality Graph" width="650"/>
+
+</div>
+
+### � **Resnet34-Modified With Integrasi Squeeze-and-Excitation (SE) Block,  Penempatan Dropout/Batch Normalization dan  Mengganti Fungsi Aktivasi**
+
+<div align="center">
+
+<img src="images/grafik_modified.jpg" alt="ResNet34-Modified Quality Graph" width="650"/>
 
 </div>
 
@@ -138,6 +186,38 @@
 
 </details>
 
+<details>
+<summary><strong>🔧 3. ResNet34-Modified With Integrasi Squeeze-and-Excitation (SE) Block,  Penempatan Dropout/Batch Normalization dan  Mengganti Fungsi Aktivasi</strong></summary>
+
+> - **📊 Loss Pattern**: Val loss awal sangat tinggi (~7), turun drastis dan cepat mendekati train loss; setelah ~epoch 10 keduanya stabil rendah.
+> - **🚀 Performa**: Hampir tanpa gap besar antara train dan val loss; konsisten sampai akhir 30 epoch.
+> - **✨ Interpretasi**: Modifikasi membuat training lebih efisien dan generalisasi semakin kuat; lebih seimbang dan minim overfitting dibanding ResNet34 standar.
+
+</details>
+
+---
+
+## 🎯 **Kesimpulan**
+
+<table>
+<tr>
+<th>🤖 Model</th>
+<th>📊 Karakteristik</th>
+</tr>
+<tr>
+<td><strong>🔵 Plain34</strong></td>
+<td>Belajar cukup baik, tetapi training lebih lambat dan ada instabilitas awal</td>
+</tr>
+<tr>
+<td><strong>🟢 ResNet34</strong></td>
+<td>Lebih stabil dan cepat konvergen; cocok untuk model yang lebih dalam</td>
+</tr>
+<tr>
+<td><strong>🔧 ResNet Modified</strong></td>
+<td>Paling unggul sejauh ini: training efisien, loss cepat turun, generalisasi baik, dan stabil sampai akhir</td>
+</tr>
+</table>
+
 ---
 
 ## 🧪 **Hasil Testing Model**
@@ -155,6 +235,14 @@
 <div align="center">
 
 <img src="images/test_resnet.jpg" alt="ResNet34 Test Results" width="600"/>
+
+</div>
+
+### � **Hasil Pada Test Model Resnet34-Modified With Integrasi Squeeze-and-Excitation (SE) Block,  Penempatan Dropout/Batch Normalization dan  Mengganti Fungsi Aktivasi**
+
+<div align="center">
+
+<img src="images/test_modified.jpg" alt="ResNet34-Modified Test Results" width="600"/>
 
 </div>
 
@@ -213,13 +301,16 @@
 
 ---
 
+
+
+
 ## 🔗 **link colab**
 
 <div align="center">
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ni0mQ7qrZmD0QmIXqFltyQ3dwOLQXGSr?usp=sharing)
 
-### https://colab.research.google.com/drive/1Ni0mQ7qrZmD0QmIXqFltyQ3dwOLQXGSr?usp=sharing
+## https://colab.research.google.com/drive/1Ni0mQ7qrZmD0QmIXqFltyQ3dwOLQXGSr?usp=sharing
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Ni0mQ7qrZmD0QmIXqFltyQ3dwOLQXGSr?usp=sharing)
 
@@ -229,7 +320,7 @@
 
 <div align="center">
 
-**🎓 Tugas Deep Learning - Semester 7**
+**🎓 Tugas Deep Learning RB - Semester 7**
 
 *Made with ❤️ by Team Salt*
 
